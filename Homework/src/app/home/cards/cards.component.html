@@ -1,0 +1,10 @@
+<div class="card" [class.selected]="card.selected">
+  <img class="img" [src]="card.imageUrl" alt="Avatar" style="width: 100%" />
+  <div class="container">
+    <h4 class="card-title">
+      <b> {{ card.title }}</b>
+    </h4>
+    <p>{{ card.description }}</p>
+    <button class="green" (click)="onVisitNowClick()">Visit Now!</button>
+  </div>
+</div>

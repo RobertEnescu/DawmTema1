@@ -1,0 +1,22 @@
+<app-menu-bar></app-menu-bar>
+<app-header></app-header>
+<h1 class="header-second">Search & Book all our destinations</h1>
+<div class="search-bar">
+  <input type="text" placeholder="Search" (input)="onSearch($event)" />
+  <div class="search-results" *ngIf="showResults">
+    <div *ngFor="let card of filteredCards">
+      <a (click)="onCardSelected(card)">{{ card.title }}</a>
+    </div>
+  </div>
+</div>
+
+<div id="cards-section" class="popular-cards">
+  <h2 class="popular-title">Most Popular</h2>
+  <div class="cards-container">
+    <div class="cards-grid">
+      <div *ngFor="let card of cards">
+        <app-cards class="cards" [card]="card"></app-cards>
+      </div>
+    </div>
+  </div>
+</div>

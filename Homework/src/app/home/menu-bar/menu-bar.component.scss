@@ -1,0 +1,40 @@
+.menu-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  height: 5px;
+  padding: 1rem;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.menu-items {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-items li {
+  margin-left: 1.5rem;
+}
+
+.menu-items li:first-child {
+  margin-left: 0;
+}
+
+.menu-items li a {
+  color: #333;
+  font-size: 15px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.menu-items li:hover a {
+  color: #4ee44e;
+}
+
+img {
+  max-height: 40px;
+  border-radius: 10px;
+}
