@@ -1,0 +1,47 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services-row {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.service-card {
+  margin: 1rem;
+  padding: 1rem;
+  max-width: 400px;
+}
+
+.service-card h2 {
+  margin-top: 0;
+}
+
+.service-card p {
+  margin-bottom: 0;
+}
+
+.title {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #4ee44e;
+  font-size: 20px;
+}
+.popular-title {
+  text-transform: uppercase;
+  color: #4ee44e;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.popular-title::after {
+  content: "";
+  position: absolute;
+  top: 850px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 2px solid #dddcdc;
+  width: 270px;
+}

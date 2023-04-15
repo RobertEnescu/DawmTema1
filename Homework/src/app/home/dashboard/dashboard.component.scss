@@ -15,7 +15,7 @@
 .popular-title::after {
   content: "";
   position: absolute;
-  bottom: -30px;
+  top: 1420px;
   left: 50%;
   transform: translateX(-50%);
   border-bottom: 2px solid #dddcdc;
@@ -103,7 +103,7 @@
 .header-second {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   position: absolute;
-  top: 90%;
+  top: 93%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #4ee44e;
