@@ -17,5 +17,9 @@ export class CardsComponent {
 
   onVisitNowClick(): void {
     this.cardService.updateHeaderTitle(this.card.title);
+    const title = document.getElementById('header-section');
+    if (title) {
+      title.scrollIntoView({ behavior: 'smooth' });
+    }
   }
 }
